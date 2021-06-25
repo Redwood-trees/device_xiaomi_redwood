@@ -1,4 +1,5 @@
 # Bluetooth
+persist.vendor.btstack.enable.twsplus=true
 vendor.bluetooth.soc=hastings
 
 # CNE
