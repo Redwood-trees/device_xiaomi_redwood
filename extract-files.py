@@ -84,6 +84,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open'),
     'vendor/lib64/libsensor_cal_v2.so': blob_fixup()
         .add_needed('libjsoncpp_shim.so'),
+    'vendor/lib64/hw/displayfeature.default.so': blob_fixup()
+        .replace_needed('vendor.xiaomi.hardware.displayfeature@1.0.so', 'vendor.xiaomi.hardware.displayfeature@1.0_vendor.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
