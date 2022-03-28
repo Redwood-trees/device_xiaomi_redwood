@@ -1,7 +1,8 @@
 # Bluetooth
 persist.vendor.btstack.enable.twsplus=true
-vendor.bluetooth.soc=hastings
+persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.bt.a2dp.hal.implementation=true
+vendor.bluetooth.soc=hastings
 
 # CNE
 persist.vendor.cne.feature=1
