@@ -1,5 +1,8 @@
 # Bluetooth
 vendor.bluetooth.soc=hastings
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+persist.vendor.bt.a2dp.hal.implementation=true
 
 # Charger
 ro.charger.enable_suspend=true
