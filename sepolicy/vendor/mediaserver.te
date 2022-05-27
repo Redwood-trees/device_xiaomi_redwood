@@ -1,2 +1,4 @@
 # Allow mediaserver to access QSPM HAL Service for adreno profile processing
 hal_client_domain(mediaserver, vendor_hal_qspmhal)
+
+allow mediaserver package_native_service:service_manager { find };
