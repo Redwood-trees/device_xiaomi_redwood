@@ -100,6 +100,10 @@ vendor/lib/libsndmonitor.so
 vendor/lib/libssrec.so
 vendor/lib/libvideoNS.so
 
+# Audio (Spatial Audio)
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib64/soundfx/libspatialaudio.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
