@@ -9,7 +9,9 @@ ro.min.fling_velocity                   u:object_r:exported_system_prop:s0
 # Global
 ro.boot.hwc                    u:object_r:exported_default_prop:s0
 ro.boot.hwversion              u:object_r:exported_default_prop:s0
+ro.build.flavor                u:object_r:build_prop:s0
 ro.hardware.chipname           u:object_r:exported_default_prop:s0
+ro.miui.build.region           u:object_r:exported_system_prop:s0
 ro.product.marketname    u:object_r:build_prop:s0
 ro.product.mod_device    u:object_r:build_prop:s0
 
