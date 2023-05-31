@@ -1,0 +1,7 @@
+type hal_misys_hwservice, hwservice_manager_type;
+
+# HwBinder IPC from client to server
+binder_call(hal_misys_client, hal_misys_server)
+
+add_hwservice(hal_misys_server, hal_misys_hwservice)
+allow hal_misys_client hal_misys_hwservice:hwservice_manager find;
