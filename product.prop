@@ -1,6 +1,9 @@
 # Blur
 ro.launcher.blur.appLaunch=0
 
+# Enable Bluetooth AutoOn feature
+bluetooth.server.automatic_turn_on=true
+
 # IMS
 ro.telephony.block_binder_thread_on_incoming_calls=false
 
