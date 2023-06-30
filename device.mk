@@ -265,6 +265,10 @@ PRODUCT_COPY_FILES += \
 endif
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
