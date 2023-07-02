@@ -23,4 +23,7 @@
         <item>restart_bootloader</item>
         <item>restart_fastboot</item>
     </string-array>
+	
+    <!-- LiveDisplay -->
+    <bool name="config_enableLiveDisplay">false</bool>
 </resources>
