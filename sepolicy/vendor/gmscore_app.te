@@ -1,19 +1,9 @@
-dontaudit untrusted_app_all device:dir { read };
-dontaudit untrusted_app_all proc_asound:dir { search };
-dontaudit untrusted_app_all proc:dir { search };
-
-dontaudit untrusted_app_all proc_misc:file { read };
-dontaudit untrusted_app_all cache_file:lnk_file { read };
-
-dontaudit untrusted_app_all proc_loadavg:file { read };
-dontaudit untrusted_app_all device:file { read };
-
 # Incremental
-get_prop(untrusted_app, incremental_prop)
+get_prop(gmscore_app, incremental_prop)
 
 # To get signature of an APK installed on Incremental File System, and fill in data
 # blocks and get the filesystem state
-allowxperm untrusted_app apk_data_file:file ioctl {
+allowxperm gmscore_app apk_data_file:file ioctl {
   INCFS_IOCTL_READ_SIGNATURE
   INCFS_IOCTL_FILL_BLOCKS
   INCFS_IOCTL_GET_FILLED_BLOCKS
