@@ -20,6 +20,7 @@ debug.sf.enable_hwc_vds=1
 
 # Log
 persist.log.tag.AnalyticsService=S
+persist.log.tag.ACDB-LOADER=S
 persist.log.tag.CVP=S
 persist.log.tag.CamX=S
 persist.log.tag.ContrastColorUtil=S
