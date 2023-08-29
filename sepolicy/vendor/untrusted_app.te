@@ -1,0 +1,9 @@
+dontaudit untrusted_app_all device:dir { read };
+dontaudit untrusted_app_all proc_asound:dir { search };
+dontaudit untrusted_app_all proc:dir { search };
+
+dontaudit untrusted_app_all proc_misc:file { read };
+dontaudit untrusted_app_all cache_file:lnk_file { read };
+
+dontaudit untrusted_app_all proc_loadavg:file { read };
+dontaudit untrusted_app_all device:file { read };
