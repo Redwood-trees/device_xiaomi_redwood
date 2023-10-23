@@ -584,6 +584,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -614,6 +617,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -644,6 +650,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -674,6 +683,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -704,6 +716,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -734,6 +749,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -764,6 +782,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -794,6 +815,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -824,6 +848,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -854,6 +881,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -884,6 +914,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -914,6 +947,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -944,6 +980,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -974,6 +1013,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -1004,6 +1046,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -1034,6 +1079,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -1064,6 +1112,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -1094,6 +1145,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -1124,6 +1178,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -1154,6 +1211,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -1184,6 +1244,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
@@ -1214,6 +1277,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 		<boolean name="show_video_quality_toast" value="false" />
 		<boolean name="show_call_session_event_toast" value="false" />
 		<boolean name="show_data_usage_toast" value="false" />
+        <int-array name="carrier_nr_availabilities_int_array" num="1"> 
+            <item value="2" /> 
+        </int-array>
 		<string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
 			<item value="iccid" />
 			<item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874" />
