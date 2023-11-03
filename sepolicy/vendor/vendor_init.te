@@ -5,3 +5,6 @@ set_prop(vendor_init, vendor_thermal_normal_prop)
 allow vendor_init proc_watermark_scale_factor:file w_file_perms;
 
 allow vendor_init cgroup:file getattr;
+
+# schedtune
+allow vendor_init device:file { create read write };
