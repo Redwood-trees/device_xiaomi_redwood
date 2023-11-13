@@ -230,3 +230,4 @@ CONFIG_IEEE80211AX := true
 
 # Inherit proprietary blobs
 include vendor/xiaomi/redwood/BoardConfigVendor.mk
+
