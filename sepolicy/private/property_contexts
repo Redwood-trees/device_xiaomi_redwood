@@ -4,6 +4,13 @@ ro.camera.                     u:object_r:exported_default_prop:s0
 ro.camera.req.fmq.                 u:object_r:exported_default_prop:s0
 ro.camera.res.fmq.                 u:object_r:exported_default_prop:s0
 
+# Dolby Properties
+ro.vendor.dolby.dax.version            u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.support      u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.surround.enable  u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.vision.support   u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.eq.half          u:object_r:exported_system_prop:s0
+
 # Fling
 ro.max.fling_velocity                   u:object_r:exported_system_prop:s0
 ro.min.fling_velocity                   u:object_r:exported_system_prop:s0
