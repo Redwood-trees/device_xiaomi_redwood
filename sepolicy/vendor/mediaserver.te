@@ -2,3 +2,4 @@
 hal_client_domain(mediaserver, vendor_hal_qspmhal)
 
 allow mediaserver package_native_service:service_manager { find };
+get_prop(mediaserver, vendor_display_prop)
