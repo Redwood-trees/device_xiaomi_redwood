@@ -10,7 +10,7 @@ DEVICE_PATH := device/xiaomi/redwood
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := redwood,redwoodin
+TARGET_OTA_ASSERT_DEVICE := redwood|redwoodin
 
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := redwood
