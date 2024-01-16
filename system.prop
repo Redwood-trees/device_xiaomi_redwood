@@ -34,6 +34,7 @@ persist.log.tag.b/223498680=S
 persist.log.tag.TrafficStats=S
 persist.log.tag.SYNX-UMD=S
 persist.log.tag.CHIUSECASE=S
+persist.log.tag.OpenGLRenderer=S
 
 # IMS
 persist.dbg.volte_avail_ovr=1
