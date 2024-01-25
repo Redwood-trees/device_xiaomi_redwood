@@ -1,8 +1,5 @@
 # Bluetooth
 vendor.bluetooth.soc=hastings
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.btstack.enable.twsplussho=true
-persist.vendor.bt.a2dp.hal.implementation=true
 
 # Charger
 ro.charger.enable_suspend=true
@@ -61,10 +58,7 @@ ro.ril.fast.dormancy.timeout=3
 ro.mot.eri.losalert.delay=100
 ro.vold.umsdirtyratio=20
 power.saving.mode=1
-
-# Radio VoNR Calling
-persist.radio.is_vonr_enabled_0=true
-persist.radio.is_vonr_enabled_1=true
+ro.config.nocheckin=1
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
