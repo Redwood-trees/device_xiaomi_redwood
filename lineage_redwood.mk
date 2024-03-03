@@ -17,6 +17,13 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # MIUI Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
+# Device props
+TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_DISABLE_EPPE := true
+TARGET_DEBLOAT := true
+
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
