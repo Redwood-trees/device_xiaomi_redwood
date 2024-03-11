@@ -25,6 +25,7 @@ source "${HELPER}"
 function vendor_imports() {
     cat << EOF >> "$1"
 		"device/xiaomi/sm8350-common",
+		"hardware/qcom-caf/common/libqti-perfd-client",
 		"hardware/qcom-caf/sm8350",
 		"hardware/qcom-caf/wlan",
 		"hardware/xiaomi",
