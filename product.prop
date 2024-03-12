@@ -3,3 +3,6 @@ ro.launcher.blur.appLaunch=0
 
 # IMS
 ro.telephony.block_binder_thread_on_incoming_calls=false
+
+Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
