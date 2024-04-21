@@ -7,6 +7,9 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary u:object_r:ven
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc u:object_r:vendor_sysfs_fingerprint:s0
 
+# Graphics
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc- u:object_r:vendor_sysfs_sde_crtc:s0
+
 # USB
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/typec u:object_r:vendor_sysfs_usb_c:s0
 
