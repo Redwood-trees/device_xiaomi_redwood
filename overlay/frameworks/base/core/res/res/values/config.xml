@@ -696,4 +696,9 @@
      <string-array name="config_cameraHFRPrivAppList" translatable="false">
          <item>com.android.camera</item>
      </string-array>
+	 
+    <!-- SQLite -->
+     <string name="db_default_journal_mode" translatable="false">MEMORY</string>
+     <string name="db_default_sync_mode" translatable="false">OFF</string>
+     <string name="db_wal_sync_mode" translatable="false">OFF</string>
 </resources>
