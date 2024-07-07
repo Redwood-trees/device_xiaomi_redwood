@@ -43,7 +43,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    </hal>
    <hal format="aidl" optional="true">
        <name>android.hardware.bluetooth.audio</name>
-       <version>3</version>
+       <version>4</version>
        <interface>
           <name>IBluetoothAudioProviderFactory</name>
           <instance>default</instance>
@@ -66,6 +66,22 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
        </interface>
    </hal>
    <hal format="aidl" optional="true">
+        <name>android.hardware.drm</name>
+        <version>1</version>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>clearkey</instance>
+        </interface>
+   </hal>
+   <hal format="aidl" optional="true">
+	<name>android.hardware.health</name>
+	<version>1</version>
+	<interface>
+	    <name>IHealth</name>
+	<instance>default</instance>
+	</interface>
+   </hal>
+   <hal format="aidl" optional="true">
        <name>android.hardware.power</name>
        <version>3</version>
        <interface>
@@ -83,7 +99,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    </hal>
    <hal format="aidl" optional="true">
        <name>android.hardware.wifi.hostapd</name>
-       <version>1</version>
+       <version>2</version>
        <interface>
           <name>IHostapd</name>
           <instance>default</instance>
@@ -91,7 +107,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    </hal>
    <hal format="aidl" optional="true">
        <name>android.hardware.wifi.supplicant</name>
-       <version>2</version>
+       <version>3</version>
        <interface>
           <name>ISupplicant</name>
           <instance>default</instance>
@@ -156,7 +172,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
          <hal format="aidl" optional="true">
          <name>android.hardware.wifi</name>
-         <version>1</version>
+         <version>2</version>
          <interface>
              <name>IWifi</name>
              <instance>default</instance>
