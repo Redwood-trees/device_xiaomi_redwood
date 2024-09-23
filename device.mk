@@ -159,7 +159,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm-service.clearkey \
+    libcrypto-v33	
 
 # Fastbootd
 PRODUCT_PACKAGES += \
