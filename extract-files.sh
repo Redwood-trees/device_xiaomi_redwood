@@ -91,9 +91,9 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "29 07 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
-        vendor/lib64/libwvhidl.so)
+        vendor/lib64/libwvhidl.so | vendor/lib64/mediadrm/libwvdrmengine.so)
             [ "$2" = "" ] && return 0
-            grep -q "libcrypto-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+            grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         *)
             return 1
