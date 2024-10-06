@@ -454,6 +454,11 @@ vendor/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@4.0-impl.so
+vendor/lib/libcheckpid.so
+vendor/lib/liblogwrap_vendor.so
+vendor/lib/libmicuttlefish_fs.so
+vendor/lib/libmicuttlefish_utils.so
+vendor/lib/libmivsock_utils.so
 vendor/lib/vendor.xiaomi.hardware.misys@1.0.so;MODULE_SUFFIX=-vendor
 vendor/lib/vendor.xiaomi.hardware.misys@2.0.so;MODULE_SUFFIX=-vendor
 vendor/lib/vendor.xiaomi.hardware.misys@3.0.so;MODULE_SUFFIX=-vendor
