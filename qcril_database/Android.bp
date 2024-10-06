@@ -23,6 +23,7 @@ filegroup {
         "config/8.0_config.sql",
         "config/9.0_config.sql",
         "config/10.0_config.sql",
+        "config/10.1_config.sql",
     ],
 }
 
@@ -66,5 +67,6 @@ prebuilt_etc {
         "8.0_config.sql",
         "9.0_config.sql",
         "10.0_config.sql",
+        "10.1_config.sql",
     ],
 }
