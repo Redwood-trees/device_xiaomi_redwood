@@ -114,6 +114,10 @@ BOARD_KERNEL_CMDLINE += \
     pcie_ports=compat \
     service_locator.enable=1 \
     swiotlb=noforce
+	
+# Kernel Clang Flags
+KERNEL_CC := CC=clang
+override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
 
 # Kernel
 ifeq ($(PREBUILT_KERNEL),true)
