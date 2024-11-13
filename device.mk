@@ -72,3 +72,4 @@ $(call inherit-product, vendor/xiaomi/redwood/redwood-vendor.mk)
 
 # Call the Leica Camera setup
 $(call inherit-product-if-exists, vendor/xiaomi/redwood-miuicamera/products/miuicamera.mk)
+include vendor/lineage-priv/keys/keys.mk
