@@ -22,6 +22,8 @@ BUILD_BROKEN_DUP_RULES := true
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
 # Kernel
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
+TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config vendor/xiaomi_QGKI.config
 TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
 
 # Kernel modules
