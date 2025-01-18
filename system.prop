@@ -7,6 +7,9 @@ vendor.bluetooth.soc=hastings
 # CNE
 persist.vendor.cne.feature=1
 
+#  Camera
+vendor.camera.aux.packagelist=org.lineageos.aperture,com.android.camera,com.google.camera,com.snapchat.android
+
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
