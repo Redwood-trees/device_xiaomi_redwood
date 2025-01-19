@@ -21,10 +21,6 @@ BUILD_BROKEN_DUP_RULES := true
 # Camera
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_redwood
-TARGET_RECOVERY_DEVICE_MODULES := libinit_redwood
-
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
 
