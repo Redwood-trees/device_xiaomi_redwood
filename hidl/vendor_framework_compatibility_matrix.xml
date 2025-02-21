@@ -115,6 +115,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>dpmQmiService</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <version>4</version>
+        <interface>
+            <name>IFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
    <hal format="hidl" optional="true">
        <name>android.hardware.radio</name>
        <version>1.0-4</version>
@@ -865,7 +873,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <hal format="aidl" optional="true">
        <name>android.hardware.power</name>
-       <version>4</version>
+       <version>5</version>
        <interface>
           <name>IPower</name>
           <instance>default</instance>
