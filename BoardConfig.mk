@@ -45,8 +45,5 @@ TARGET_USE_AOSP_SURFACEFLINGER := true
 # Include proprietary files
 include vendor/xiaomi/redwood/BoardConfigVendor.mk
 
-# Include MindTheGapps
--include vendor/gapps/arm64/BoardConfigVendor.mk
-
 # Inherit from proprietary files for Leica Camera
 -include vendor/xiaomi/redwood-miuicamera/products/board.mk
