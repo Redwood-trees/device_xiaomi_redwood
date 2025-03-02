@@ -1,2 +1,5 @@
 # Power HAL
 type vendor_sysfs_msm_subsys, fs_type, sysfs_type;
+
+# Torch
+type sysfs_torch, sysfs_type, fs_type;

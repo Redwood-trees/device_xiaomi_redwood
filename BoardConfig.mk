@@ -40,6 +40,52 @@ ART_BUILD_TARGET_DEBUG := false
 ART_BUILD_HOST_NDEBUG := true
 ART_BUILD_HOST_DEBUG := false
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := Spacewar
+TARGET_NO_BOOTLOADER := true
+
+# Camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+
+## torch control ##
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.redwood
+
+# Kernel
+BOARD_BOOT_HEADER_VERSION := 3
+BOARD_KERNEL_CMDLINE := \
+    androidboot.hardware=qcom \
+    androidboot.memcg=1 \
+    lpm_levels.sleep_disabled=1 \
+    service_locator.enable=1 \
+    androidboot.usbcontroller=a600000.dwc3 \
+    swiotlb=0 \
+    loop.max_part=7 \
+    cgroup.memory=nokmem,nosocket \
+    pcie_ports=compat \
+    iptable_raw.raw_before_defrag=1 \
+    ip6table_raw.raw_before_defrag=1
+
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+BOARD_RAMDISK_USE_LZ4 := true
+TARGET_KERNEL_SOURCE := kernel/nothing/sm7325
+TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config
+#TARGET_KERNEL_NO_GCC := true
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
+TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_qca6750.ko
+
+# Platform
+TARGET_BOARD_PLATFORM := lahaina
+
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_GKI := true
