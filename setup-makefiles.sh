@@ -52,7 +52,6 @@ function lib_to_package_fixup_vendor_variants() {
             vendor.xiaomi.hardware.misys@4.0)
             echo "$1-vendor"
             ;;
-        libwpa_client) ;;
         *)
             return 1
             ;;
