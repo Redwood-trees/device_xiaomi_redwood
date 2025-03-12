@@ -23,15 +23,8 @@ TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
-TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config vendor/xiaomi_QGKI.config
-TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
-
-# Kernel modules
-BOOT_KERNEL_MODULES := \
-    focaltech_touch.ko \
-    goodix_core.ko \
-    xiaomi_touch.ko
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+TARGET_KERNEL_CONFIG := vendor/xiaomi-qgki_defconfig vendor/debugfs.config
+TARGET_KERNEL_CONFIG += vendor/redwood.config
 
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
