@@ -255,6 +255,11 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
+ifeq ($(PREBUILT_KERNEL),true)
+LOCAL_KERNEL := device/xiaomi/redwood-kernel/Image
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+endif
 
 # Lineage Health
 PRODUCT_PACKAGES += \
