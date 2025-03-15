@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/xiaomi/sm8350-common
+DEVICE_PATH := device/xiaomi/redwood
 
 BOARD_VENDOR := xiaomi
 
@@ -44,14 +44,23 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := redwood|redwoodin
+
 # Bootloader
 TARGET_NO_BOOTLOADER := true
+
+# Board
+TARGET_BOOTLOADER_BOARD_NAME := redwood
+
+# Camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
 # Display
 TARGET_SCREEN_DENSITY ?= 440
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -63,15 +72,18 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/hidl/vendor_framework_compatibility_matrix.xml \
-    $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
-    $(COMMON_PATH)/hidl/framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/hidl/vendor_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/hidl/framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
-    $(COMMON_PATH)/hidl/manifest_lahaina.xml \
-    $(COMMON_PATH)/hidl/manifest_xiaomi.xml
+    $(DEVICE_PATH)/hidl/manifest_lahaina.xml \
+    $(DEVICE_PATH)/hidl/manifest_xiaomi.xml
+
+# Ignore overriding commands errors
+BUILD_BROKEN_DUP_RULES := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -102,6 +114,18 @@ BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
+# Kernel
+TARGET_KERNEL_SOURCE := kernel/xiaomi/redwood
+TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config vendor/xiaomi_QGKI.config
+TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
+
+# Kernel modules
+BOOT_KERNEL_MODULES := \
+    focaltech_touch.ko \
+    goodix_core.ko \
+    xiaomi_touch.ko
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
@@ -126,6 +150,9 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
 
+BOARD_DTBOIMG_PARTITION_SIZE := 25165824
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 113254576128
+
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 104857600
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 104857600
@@ -140,18 +167,18 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_BOARD_PLATFORM := lahaina
 
 # Power
-TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(COMMON_PATH):libperfmgr-ext-xiaomi
+TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH):libperfmgr-ext-xiaomi
 
 # PowerShare
 TARGET_POWERSHARE_PATH := /sys/class/qcom-battery/reverse_chg_mode
 
 # Properties
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
@@ -159,7 +186,7 @@ BOARD_USES_QCOM_HARDWARE := true
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -174,9 +201,12 @@ VENDOR_SECURITY_PATCH := 2025-02-01
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -211,4 +241,7 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
-include vendor/xiaomi/sm8350-common/BoardConfigVendor.mk
+include vendor/xiaomi/redwood/BoardConfigVendor.mk
+
+# Inherit from proprietary files for Leica Camera
+-include vendor/xiaomi/redwood-miuicamera/products/board.mk

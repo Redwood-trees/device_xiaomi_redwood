@@ -7,6 +7,9 @@
 
 set -e
 
+DEVICE=redwood
+VENDOR=xiaomi
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -22,7 +25,7 @@ source "${HELPER}"
 
 function vendor_imports() {
     cat << EOF >> "$1"
-		"device/xiaomi/sm8350-common",
+		"device/xiaomi/redwood",
 		"hardware/qcom-caf/common/libqti-perfd-client",
 		"hardware/qcom-caf/sm8350",
 		"hardware/qcom-caf/wlan",
@@ -62,33 +65,14 @@ function lib_to_package_fixup() {
         lib_to_package_fixup_vendor_variants "$@"
 }
 
-# Initialize the helper for common
-setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
+# Initialize the helper
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
 # Warning headers and guards
-write_headers "haydn lisa mars odin redwood renoir star venus"
+write_headers "redwood"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt"
 
 # Finish
 write_footers
-
-if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
-    # Reinitialize the helper for device
-    source "${MY_DIR}/../../${VENDOR}/${DEVICE}/setup-makefiles.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
-
-    # Warning headers and guards
-    write_headers
-
-    # The standard device blobs
-    write_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt"
-
-    if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" ]; then
-        append_firmware_calls_to_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt"
-    fi
-
-    # Finish
-    write_footers
-fi
