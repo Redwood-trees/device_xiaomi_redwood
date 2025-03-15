@@ -115,6 +115,14 @@ BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 # Kernel
+ifeq ($(PREBUILT_KERNEL),true)
+KERNEL_PATH := device/xiaomi/redwood-kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
+BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)/01_dtbdump_Qualcomm_Technologies,_Inc._Yupik_SoC.dtb
+else
 TARGET_KERNEL_SOURCE := kernel/xiaomi/redwood
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config vendor/xiaomi_QGKI.config
 TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
@@ -125,6 +133,7 @@ BOOT_KERNEL_MODULES := \
     goodix_core.ko \
     xiaomi_touch.ko
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+endif
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
