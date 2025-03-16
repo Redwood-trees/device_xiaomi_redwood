@@ -11,7 +11,7 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Pribuilt kernel true/false
-PREBUILT_KERNEL := false
+PREBUILT_KERNEL := true
 
 # Device props
 TARGET_SUPPORTS_BLUR := true
