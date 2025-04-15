@@ -86,6 +86,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libjsoncpp_shim.so'),
     'vendor/lib64/hw/displayfeature.default.so': blob_fixup()
         .replace_needed('vendor.xiaomi.hardware.displayfeature@1.0.so', 'vendor.xiaomi.hardware.displayfeature@1.0_vendor.so'),
+    ('vendor/etc/media_codecs.xml', 'vendor/etc/media_codecs_yupik_v0.xml', 'vendor/etc/media_codecs_yupik_v1.xml'): blob_fixup()
+        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
