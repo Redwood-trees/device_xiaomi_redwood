@@ -144,14 +144,6 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Camera Extensions
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.camerax.extensions.enabled=true
-
-# Camera Extensions permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/camerax-vendor-extensions.xml
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-parts.xml
 
