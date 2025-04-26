@@ -75,6 +75,14 @@ vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
+# Audio configs
+vendor/etc/audio/sku_yupik/audio_platform_info_yupikidp.xml
+vendor/etc/audio/sku_yupik/mixer_paths_yupikidp.xml
+vendor/etc/audio/sku_yupik/mixer_paths_overlay_dynamic.xml
+vendor/etc/audio/sku_yupik/mixer_paths_overlay_static.xml
+vendor/etc/audio/sku_yupik/sound_trigger_mixer_paths_yupikidp.xml
+vendor/etc/audio/sku_yupik/sound_trigger_platform_info.xml
+
 # Audio Hardware
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/liba2dpoffload.so
