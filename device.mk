@@ -254,6 +254,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
 # Lineage Health
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
