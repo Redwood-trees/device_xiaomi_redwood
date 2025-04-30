@@ -940,6 +940,12 @@ vendor/lib64/soundfx/libswvqe.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
+# dolby volume listener
+vendor/lib/libdlbpreg.so|709dac91a2b39f1450527313cc6d10ce0671b3ef
+vendor/lib64/libdlbpreg.so|b0b04d860e6e57c30acd6196e7b539b8c6a0a189
+vendor/lib/soundfx/libdlbvol.so|4430011e9603a25e06d17b635223ac9887220cef
+vendor/lib64/soundfx/libdlbvol.so|64b21692cc6bb65e70deef4ef3768f5547ac75f9
+
 # DPM
 system/framework/tcmclient.jar
 system_ext/bin/dpmd
