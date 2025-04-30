@@ -113,6 +113,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+$(call soong_config_set,camera,package_name,com.android.camera)
 
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
