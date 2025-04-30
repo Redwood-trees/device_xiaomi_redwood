@@ -115,6 +115,10 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 $(call soong_config_set,camera,package_name,com.android.camera)
 
+# Camera Extensions permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/camerax-vendor-extensions.xml
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 

@@ -1,3 +1,6 @@
+# Camera
+ro.camerax.extensions.enabled=true
+
 # Media
 ro.odm.build.media_performance_class=31
 
