@@ -1,37 +1,7 @@
-prebuilt_etc {
-    name: "6.0_config.sql",
-    src: "6.0_config.sql",
-    relative_install_path: "qcril_database/upgrade/config",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "7.0_config.sql",
-    src: "7.0_config.sql",
-    relative_install_path: "qcril_database/upgrade/config",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "8.0_config.sql",
-    src: "8.0_config.sql",
-    relative_install_path: "qcril_database/upgrade/config",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "9.0_config.sql",
-    src: "9.0_config.sql",
-    relative_install_path: "qcril_database/upgrade/config",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "10.0_config.sql",
-    src: "10.0_config.sql",
-    relative_install_path: "qcril_database/upgrade/config",
-    vendor: true,
-}
+//
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
 
 prebuilt_etc {
     name: "10.1_config.sql",
