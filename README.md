@@ -1,6 +1,6 @@
 Copyright (C) 2023 The LineageOS Project
 
-Device configuration for Poco X5 Pro 5G/Redmi Note 12 Pro Speed
+Unified Device configuration for Poco X5 Pro 5G/Redmi Note 12 Pro Speed
 =========================================
 
 The Poco X5 Pro 5G/Redmi Note 12 Pro Speed (codenamed _"redwood"_) is a mid-range smartphone from Xiaomi.
