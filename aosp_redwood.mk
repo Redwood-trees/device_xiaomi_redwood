@@ -16,9 +16,7 @@ PREBUILT_KERNEL := true
 # Gapps
 WITH_GMS := true
 
-# TPP OFFICIAL
-CUSTOM_BUILD_TYPE := OFFICIAL
-CUSTOM_MAINTAINER := Thereache
+CUSTOM_MAINTAINER := Thereache_&_Mayur_U
 
 # Device props
 TARGET_SUPPORTS_BLUR := true
