@@ -64,12 +64,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-         <name>android.hardware.dumpstate</name>
-         <transport>hwbinder</transport>
-         <fqname>@1.0::IDumpstateDevice/default</fqname>
-         <fqname>@1.1::IDumpstateDevice/default</fqname>
-     </hal>
     <!-- VPP Service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.vpp</name>
