@@ -151,6 +151,10 @@ persist.vendor.camera.logInfoMask=false
 persist.vendor.camera.perflock.enable=0
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev,com.snapchat.android
 
+# DRM
+drm.service.enabled=true
+ro.netflix.bsp_rev=Q7325-SPY-33758-1
+
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
