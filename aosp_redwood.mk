@@ -14,7 +14,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 PREBUILT_KERNEL := true
 
 # Gapps
-WITH_GMS := true
+WITH_GMS := false
 
 CUSTOM_MAINTAINER := Thereache_&_Mayur_U
 
