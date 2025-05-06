@@ -574,6 +574,16 @@ vendor/firmware/yupik_ipa_fws.b04
 vendor/firmware/yupik_ipa_fws.elf
 vendor/firmware/yupik_ipa_fws.mdt
 
+# Media configs
+vendor/etc/media/video_system_specs.json
+vendor/etc/media_codecs_performance_lahaina.xml
+vendor/etc/media_codecs_performance_yupik_v1.xml
+vendor/etc/media_lahaina/video_system_specs.json
+vendor/etc/media_profiles_lahaina.xml
+vendor/etc/media_profiles_yupik_v1.xml
+vendor/etc/media_yupik_v1/video_system_specs.json
+vendor/etc/video_system_specs.json
+
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00
 vendor/firmware/vpu20_1v.b01
@@ -1144,10 +1154,13 @@ system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/bin/init.qti.media.sh|5246bd5f2632b60d66405af01166f8781d6054ab
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
+vendor/etc/media/video_system_specs.json
+vendor/etc/media_lahaina/video_system_specs.json
+vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
+vendor/etc/video_system_specs.json
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib/libqc2vppfilter.so
@@ -1159,26 +1172,6 @@ vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
-
-# Media configs
-vendor/etc/init/init.qti.media.rc|3b00504ab89b9e66709090dcba802ad64708dc5f
-vendor/etc/media/video_system_specs.json
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_codecs_performance_yupik_v0.xml
-vendor/etc/media_codecs_performance_yupik_v1.xml
-vendor/etc/media_codecs_system_default.xml
-vendor/etc/media_codecs_system_default_yupik.xml
-vendor/etc/media_codecs_yupik_v0.xml
-vendor/etc/media_codecs_yupik_v1.xml
-vendor/etc/media_profiles.xml
-vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_vendor.xml
-vendor/etc/media_profiles_yupik_v0.xml
-vendor/etc/media_profiles_yupik_v1.xml
-vendor/etc/media_yupik_v0/video_system_specs.json
-vendor/etc/media_yupik_v1/video_system_specs.json
-vendor/etc/video_system_specs.json
 
 # Mlipay
 vendor/bin/mlipayd@1.1
