@@ -53,6 +53,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.*ozoaudio.*\n?', '')
         .regex_replace('.*dolby.*\n?', ''),
+    ('vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc', 'vendor/etc/init/vendor.qti.media.c2@1.0-service.rc'): blob_fixup()
+        .regex_replace('writepid /dev/cpuset/foreground/tasks', 'task_profiles ProcessCapacityHigh'),
+    ('vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc'): blob_fixup()
+        .regex_replace('writepid /dev/stune/nnapi-hal/tasks', 'task_profiles NNApiHALPerformance'),
     'vendor/etc/public.libraries.txt': blob_fixup()
         .regex_replace('.*libqti-perfd-client.so.*\n?', ''),
     'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
