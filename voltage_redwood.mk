@@ -8,17 +8,13 @@
 $(call inherit-product, device/xiaomi/redwood/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Pribuilt kernel true/false
 PREBUILT_KERNEL := true
 
 # Gapps
-WITH_GMS := true
-
-# TPP OFFICIAL
-CUSTOM_BUILD_TYPE := OFFICIAL
-CUSTOM_MAINTAINER := Thereache
+WITH_GMS := false
 
 # Device props
 TARGET_SUPPORTS_BLUR := true
@@ -32,7 +28,7 @@ PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 22101320G
-PRODUCT_NAME := aosp_redwood
+PRODUCT_NAME := voltage_redwood
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

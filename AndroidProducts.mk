@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_redwood.mk
+    $(LOCAL_DIR)/voltage_redwood.mk
