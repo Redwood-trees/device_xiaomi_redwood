@@ -53,6 +53,11 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.*ozoaudio.*\n?', '')
         .regex_replace('.*dolby.*\n?', ''),
+    ('vendor/etc/media_codecs_lahaina.xml', 'vendor/etc/media_codecs_system_default_yupik.xml'): blob_fixup()
+        .regex_replace('.+media_codecs_(c2_audio|dolby_audio|google_audio|google_c2|google_telephony|vendor_audio).+\n', '')
+        .regex_replace(r'(?s)(<Settings.*?>)',r'\1\n        <Domain name="telephony" enabled="true" />'),
+    ('vendor/etc/media_codecs_yupik_v1.xml'): blob_fixup()
+        .regex_replace('.+media_codecs_(dolby_audio|with_dolby_yupik).+\n', ''),
     ('vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc', 'vendor/etc/init/vendor.qti.media.c2@1.0-service.rc'): blob_fixup()
         .regex_replace('writepid /dev/cpuset/foreground/tasks', 'task_profiles ProcessCapacityHigh'),
     ('vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc'): blob_fixup()
