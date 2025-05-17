@@ -576,7 +576,6 @@ vendor/firmware/yupik_ipa_fws.mdt
 
 # Media configs
 vendor/etc/media/video_system_specs.json
-vendor/etc/media_codecs_performance_lahaina.xml
 vendor/etc/media_codecs_performance_yupik_v1.xml
 vendor/etc/media_lahaina/video_system_specs.json
 vendor/etc/media_profiles_lahaina.xml
