@@ -11,7 +11,7 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Pribuilt kernel true/false
-PREBUILT_KERNEL := true
+PREBUILT_KERNEL := false
 
 # Gapps
 WITH_GMS := true
